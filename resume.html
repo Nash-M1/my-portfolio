@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — JDC.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .resume-wrap { padding: 80px 48px; }
+    .resume-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+    .resume-col h4 {
+      font-size: .7rem; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 32px;
+    }
+    .resume-item { padding: 24px 0; border-bottom: 1px solid var(--border); }
+    .resume-item:first-of-type { padding-top: 0; }
+    .resume-date {
+      font-size: .7rem; letter-spacing: .18em;
+      color: var(--gold); margin-bottom: 6px;
+    }
+    .resume-role {
+      font-size: .85rem; letter-spacing: .12em; text-transform: uppercase;
+      font-weight: 700; margin-bottom: 4px;
+    }
+    .resume-company { font-size: .9rem; color: var(--fg3); }
+    .resume-download {
+      margin-top: 60px;
+      border: 1px solid var(--border);
+      padding: 32px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 20px;
+    }
+    .resume-download h5 {
+      font-size: .8rem; letter-spacing: .18em; text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .resume-download p { font-size: .88rem; color: var(--fg3); }
+    @media (max-width: 800px) {
+      .resume-grid { grid-template-columns: 1fr; gap: 40px; }
+      .resume-wrap { padding: 60px 20px; }
+      .resume-download { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo.png" alt="Logo" class="nav-logo-img"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
+    <span class="nav-logo-fallback" style="display:none;">JDC<span style="color:var(--gold)">.</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+    <button class="toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="resume-wrap">
+    <p class="section-label">03 — Resume</p>
+    <h2 class="section-title">MY JOURNEY<span class="dot">.</span></h2>
+
+    <div class="resume-grid">
+          <div class="resume-col">
+      <h4>Education</h4>
+      <div class="resume-item">
+        <div class="resume-date">2023 — Present</div>
+        <div class="resume-role">BS Information Technology</div>
+        <div class="resume-company">Holy Angel University, Angeles City</div>
+      </div>
+      <div class="resume-item">
+        <div class="resume-date">Expected 2027</div>
+        <div class="resume-role">3rd Year — Web Development Track</div>
+        <div class="resume-company">Currently building real-world projects</div>
+      </div>
+    </div>
+          <div class="resume-col">
+      <h4>Currently Learning</h4>
+      <div class="resume-item">
+        <div class="resume-date">2024 — Present</div>
+        <div class="resume-role">Front-End Development</div>
+        <div class="resume-company">HTML, CSS, JavaScript, React</div>
+      </div>
+      <div class="resume-item">
+        <div class="resume-date">2024 — Present</div>
+        <div class="resume-role">UI/UX & Design Systems</div>
+        <div class="resume-company">Figma, responsive design, accessibility</div>
+      </div>
+      <div class="resume-item">
+        <div class="resume-date">2025 — Present</div>
+        <div class="resume-role">Version Control & Deployment</div>
+        <div class="resume-company">Git, GitHub, Netlify</div>
+      </div>
+    </div>
+
+    <div class="resume-download">
+      <div>
+        <h5>Full Resume Available</h5>
+        <p>Download the complete PDF version with detailed project descriptions.</p>
+      </div>
+      <a href="resume.pdf" class="btn-primary" download>+ Download PDF</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

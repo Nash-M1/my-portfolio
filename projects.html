@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — JDC.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .projects-wrap { padding: 80px 48px; }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    .project-card { background: var(--card-bg); overflow: hidden; }
+    .project-card-img-wrap { overflow: hidden; position: relative; }
+    .project-card-img {
+      width: 100%; aspect-ratio: 4/3;
+      object-fit: cover; filter: grayscale(60%);
+      display: block;
+      transition: filter .4s, transform .4s;
+    }
+    .project-card:hover .project-card-img {
+      filter: grayscale(0%); transform: scale(1.04);
+    }
+    .project-num {
+      position: absolute; top: 12px; left: 12px;
+      font-size: .65rem; letter-spacing: .15em;
+      background: var(--fg); color: var(--bg);
+      padding: 4px 8px;
+    }
+    /* placeholder if no image */
+    .project-placeholder {
+      width: 100%; aspect-ratio: 4/3;
+      background: var(--bg2);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--fg3); font-size: .75rem; letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .project-info { padding: 20px; }
+    .project-title {
+      font-size: .8rem; letter-spacing: .18em; text-transform: uppercase;
+      font-weight: 600; margin-bottom: 8px;
+    }
+    .project-desc { font-size: .88rem; color: var(--fg2); margin-bottom: 14px; line-height: 1.5; }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: .65rem; letter-spacing: .1em;
+      border: 1px solid var(--border);
+      padding: 3px 10px; color: var(--fg3);
+    }
+    @media (max-width: 900px) {
+      .projects-grid { grid-template-columns: repeat(2, 1fr); }
+      .projects-wrap { padding: 60px 20px; }
+    }
+    @media (max-width: 550px) {
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo.png" alt="Logo" class="nav-logo-img"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
+    <span class="nav-logo-fallback" style="display:none;">JDC<span style="color:var(--gold)">.</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+    <button class="toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="projects-wrap">
+    <p class="section-label">02 — Projects</p>
+    <h2 class="section-title">SELECTED WORK<span class="dot">.</span></h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-card-img-wrap">
+          <!-- Save your screenshot as images/project1.jpg -->
+          <img src="images/project1.jpg" alt="HR Management System" class="project-card-img"
+               onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
+          <span class="project-num">01</span>
+        </div>
+        <div class="project-info">
+          <div class="project-title">HR Management System</div>
+          <p class="project-desc">Internal dashboard for employee records, attendance, payroll, and performance analytics for a BPO company.</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Chart.js</span>
+            <span class="tag">REST API</span>
+            <span class="tag">SCSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-img-wrap">
+          <img src="images/project2.jpg" alt="E-Commerce Platform" class="project-card-img"
+               onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
+          <span class="project-num">02</span>
+        </div>
+        <div class="project-info">
+          <div class="project-title">E-Commerce Platform</div>
+          <p class="project-desc">Full-featured online store with cart, checkout, payment gateway integration, and admin inventory panel.</p>
+          <div class="project-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Stripe</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Tailwind</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-img-wrap">
+          <img src="images/project3.jpg" alt="Real Estate Portal" class="project-card-img"
+               onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
+          <span class="project-num">03</span>
+        </div>
+        <div class="project-info">
+          <div class="project-title">Real Estate Portal</div>
+          <p class="project-desc">Property listings platform with map integration and advanced search filters for the Philippine market.</p>
+          <div class="project-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">Mapbox</span>
+            <span class="tag">Laravel API</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-img-wrap">
+          <img src="images/project4.jpg" alt="LGU Public Portal" class="project-card-img"
+               onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
+          <span class="project-num">04</span>
+        </div>
+        <div class="project-info">
+          <div class="project-title">LGU Public Portal</div>
+          <p class="project-desc">Accessible government services portal compliant with WCAG 2.1 for a local government unit in Luzon.</p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Vanilla JS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-img-wrap">
+          <img src="images/project5.jpg" alt="Learning Management System" class="project-card-img"
+               onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
+          <span class="project-num">05</span>
+        </div>
+        <div class="project-info">
+          <div class="project-title">Learning Management System</div>
+          <p class="project-desc">Online education platform with video lessons, quizzes, progress tracking, and certificate generation.</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card-img-wrap">
+          <img src="images/project6.jpg" alt="Corporate Website Redesign" class="project-card-img"
+               onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
+          <span class="project-num">06</span>
+        </div>
+        <div class="project-info">
+          <div class="project-title">Corporate Website Redesign</div>
+          <p class="project-desc">Full redesign of a financial services company site with improved UX, animations, and CMS integration.</p>
+          <div class="project-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Sanity CMS</span>
+            <span class="tag">Framer Motion</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
