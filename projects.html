@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects — JDC.</title>
+  <title>Projects — KNM.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
@@ -31,7 +31,6 @@
       background: var(--fg); color: var(--bg);
       padding: 4px 8px;
     }
-    /* placeholder if no image */
     .project-placeholder {
       width: 100%; aspect-ratio: 4/3;
       background: var(--bg2);
@@ -39,11 +38,18 @@
       color: var(--fg3); font-size: .75rem; letter-spacing: .15em;
       text-transform: uppercase;
     }
+    .project-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
     .project-info { padding: 20px; }
     .project-title {
       font-size: .8rem; letter-spacing: .18em; text-transform: uppercase;
       font-weight: 600; margin-bottom: 8px;
+      transition: color .2s;
     }
+    .project-title:hover { color: var(--gold); }
     .project-desc { font-size: .88rem; color: var(--fg2); margin-bottom: 14px; line-height: 1.5; }
     .project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .tag {
@@ -65,7 +71,7 @@
   <a href="index.html" class="nav-logo">
     <img src="images/logo.png" alt="Logo" class="nav-logo-img"
          onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
-    <span class="nav-logo-fallback" style="display:none;">JDC<span style="color:var(--gold)">.</span></span>
+    <span class="nav-logo-fallback" style="display:none;">KNM<span style="color:var(--gold)">.</span></span>
   </a>
   <div class="nav-links">
     <a href="index.html">Home</a>
@@ -83,15 +89,19 @@
     <h2 class="section-title">SELECTED WORK<span class="dot">.</span></h2>
     <div class="projects-grid">
 
+      <!-- PROJECT 1 -->
       <div class="project-card">
-        <div class="project-card-img-wrap">
-          <!-- Save your screenshot as images/project1.jpg -->
-          <img src="images/project1.jpg" alt="HR Management System" class="project-card-img"
-               onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
-          <span class="project-num">01</span>
-        </div>
+        <a href="https://your-live-link-1.com" target="_blank" class="project-link">
+          <div class="project-card-img-wrap">
+            <img src="images/project1.jpg" alt="HR Management System" class="project-card-img"
+                 onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
+            <span class="project-num">01</span>
+          </div>
+        </a>
         <div class="project-info">
-          <div class="project-title">HR Management System</div>
+          <a href="https://your-live-link-1.com" target="_blank" class="project-link">
+            <div class="project-title">HR Management System</div>
+          </a>
           <p class="project-desc">Internal dashboard for employee records, attendance, payroll, and performance analytics for a BPO company.</p>
           <div class="project-tags">
             <span class="tag">React</span>
@@ -102,14 +112,19 @@
         </div>
       </div>
 
+      <!-- PROJECT 2 -->
       <div class="project-card">
-        <div class="project-card-img-wrap">
-          <img src="images/project2.jpg" alt="E-Commerce Platform" class="project-card-img"
-               onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
-          <span class="project-num">02</span>
-        </div>
+        <a href="https://your-live-link-2.com" target="_blank" class="project-link">
+          <div class="project-card-img-wrap">
+            <img src="images/project2.jpg" alt="E-Commerce Platform" class="project-card-img"
+                 onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
+            <span class="project-num">02</span>
+          </div>
+        </a>
         <div class="project-info">
-          <div class="project-title">E-Commerce Platform</div>
+          <a href="https://your-live-link-2.com" target="_blank" class="project-link">
+            <div class="project-title">E-Commerce Platform</div>
+          </a>
           <p class="project-desc">Full-featured online store with cart, checkout, payment gateway integration, and admin inventory panel.</p>
           <div class="project-tags">
             <span class="tag">Next.js</span>
@@ -120,14 +135,19 @@
         </div>
       </div>
 
+      <!-- PROJECT 3 -->
       <div class="project-card">
-        <div class="project-card-img-wrap">
-          <img src="images/project3.jpg" alt="Real Estate Portal" class="project-card-img"
-               onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
-          <span class="project-num">03</span>
-        </div>
+        <a href="https://your-live-link-3.com" target="_blank" class="project-link">
+          <div class="project-card-img-wrap">
+            <img src="images/project3.jpg" alt="Real Estate Portal" class="project-card-img"
+                 onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
+            <span class="project-num">03</span>
+          </div>
+        </a>
         <div class="project-info">
-          <div class="project-title">Real Estate Portal</div>
+          <a href="https://your-live-link-3.com" target="_blank" class="project-link">
+            <div class="project-title">Real Estate Portal</div>
+          </a>
           <p class="project-desc">Property listings platform with map integration and advanced search filters for the Philippine market.</p>
           <div class="project-tags">
             <span class="tag">Vue.js</span>
@@ -138,14 +158,19 @@
         </div>
       </div>
 
+      <!-- PROJECT 4 -->
       <div class="project-card">
-        <div class="project-card-img-wrap">
-          <img src="images/project4.jpg" alt="LGU Public Portal" class="project-card-img"
-               onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
-          <span class="project-num">04</span>
-        </div>
+        <a href="https://your-live-link-4.com" target="_blank" class="project-link">
+          <div class="project-card-img-wrap">
+            <img src="images/project4.jpg" alt="LGU Public Portal" class="project-card-img"
+                 onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
+            <span class="project-num">04</span>
+          </div>
+        </a>
         <div class="project-info">
-          <div class="project-title">LGU Public Portal</div>
+          <a href="https://your-live-link-4.com" target="_blank" class="project-link">
+            <div class="project-title">LGU Public Portal</div>
+          </a>
           <p class="project-desc">Accessible government services portal compliant with WCAG 2.1 for a local government unit in Luzon.</p>
           <div class="project-tags">
             <span class="tag">HTML5</span>
@@ -155,14 +180,19 @@
         </div>
       </div>
 
+      <!-- PROJECT 5 -->
       <div class="project-card">
-        <div class="project-card-img-wrap">
-          <img src="images/project5.jpg" alt="Learning Management System" class="project-card-img"
-               onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
-          <span class="project-num">05</span>
-        </div>
+        <a href="https://your-live-link-5.com" target="_blank" class="project-link">
+          <div class="project-card-img-wrap">
+            <img src="images/project5.jpg" alt="Learning Management System" class="project-card-img"
+                 onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
+            <span class="project-num">05</span>
+          </div>
+        </a>
         <div class="project-info">
-          <div class="project-title">Learning Management System</div>
+          <a href="https://your-live-link-5.com" target="_blank" class="project-link">
+            <div class="project-title">Learning Management System</div>
+          </a>
           <p class="project-desc">Online education platform with video lessons, quizzes, progress tracking, and certificate generation.</p>
           <div class="project-tags">
             <span class="tag">React</span>
@@ -172,14 +202,19 @@
         </div>
       </div>
 
+      <!-- PROJECT 6 -->
       <div class="project-card">
-        <div class="project-card-img-wrap">
-          <img src="images/project6.jpg" alt="Corporate Website Redesign" class="project-card-img"
-               onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
-          <span class="project-num">06</span>
-        </div>
+        <a href="https://your-live-link-6.com" target="_blank" class="project-link">
+          <div class="project-card-img-wrap">
+            <img src="images/project6.jpg" alt="Corporate Website Redesign" class="project-card-img"
+                 onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
+            <span class="project-num">06</span>
+          </div>
+        </a>
         <div class="project-info">
-          <div class="project-title">Corporate Website Redesign</div>
+          <a href="https://your-live-link-6.com" target="_blank" class="project-link">
+            <div class="project-title">Corporate Website Redesign</div>
+          </a>
           <p class="project-desc">Full redesign of a financial services company site with improved UX, animations, and CMS integration.</p>
           <div class="project-tags">
             <span class="tag">Next.js</span>
