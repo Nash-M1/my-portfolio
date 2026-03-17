@@ -4,139 +4,113 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <title>Kenneth Nash Mallari — Front-End Developer</title>
+  <title>About — Kenneth Nash Mallari</title>
   <meta name="description" content="Kenneth Nash Mallari — Front-End Developer from Angeles City, Philippines. Available for internship, freelance, and part-time opportunities." />
   <meta name="author" content="Kenneth Nash Mallari" />
-  <link rel="canonical" href="https://portfolio-nash.netlify.app/" />
+  <link rel="canonical" href="https://portfolio-nash.netlify.app/about.html" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="/images/logo.png" type="image/png" />
-  <link rel="apple-touch-icon" href="/images/logo.png" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
 
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    .about-wrap { padding: 80px 48px; }
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr 1fr;
-      gap: 60px;
-      align-items: start;
-    }
-    .about-bio { color: var(--fg2); line-height: 1.8; }
-    .about-bio p + p { margin-top: 20px; }
-    .about-stats { display: flex; gap: 40px; margin-top: 40px; flex-wrap: wrap; }
-    .stat-num {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-weight: 800; font-size: 2.5rem; color: var(--fg);
-    }
-    .stat-label {
-      font-size: .7rem; letter-spacing: .18em;
-      text-transform: uppercase; color: var(--fg3);
-    }
-    .skills-col h4 {
-      font-size: .7rem; letter-spacing: .18em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 16px; margin-top: 32px;
-    }
-    .skills-col h4:first-child { margin-top: 0; }
-    .skills-col ul { list-style: none; }
-    .skills-col li {
-      font-size: .95rem; color: var(--fg2);
-      padding: 8px 0; border-bottom: 1px solid var(--border);
-    }
-    .skills-col li:last-child { border-bottom: none; }
-    @media (max-width: 900px) {
-      .about-grid { grid-template-columns: 1fr; }
-      .about-wrap { padding: 60px 20px; }
-    }
-  </style>
 </head>
 <body>
-<nav>
-  <a href="index.html" class="nav-logo">
-    <img src="images/logo.png" alt="Logo" class="nav-logo-img"
-         onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
-    <span class="nav-logo-fallback" style="display:none;">JDC<span style="color:var(--gold)">.</span></span>
-  </a>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-    <button class="toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
-  </div>
-</nav>
 
-<div class="page">
-  <div class="about-wrap">
-    <p class="section-label">01 — About</p>
-    <h2 class="section-title">WHO I AM<span class="dot">.</span></h2>
-    <div class="about-grid">
-      <div>
-        <div class="about-bio">
-          <p>Im a front-end focused web development student at Holy Angel University, based in Mabalacat City, Pampanga, Philippines. I focus on building clean, responsive, and user-centered web interfaces with attention to structure and performance.</p>
-          <p>I believe great software is the result of discipline, deliberate practice, and clear thinking. As I continue developing my skills, I strive to translate design concepts into accessible, pixel-accurate interfaces that work seamlessly across devices. I take pride in writing clean, maintainable code and continuously improving my craft.</p>
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Kenneth Nash Mallari logo" class="nav-logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
+      <span class="nav-logo-fallback" style="display:none;">KNM<span class="dot">.</span></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <button class="toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="page">
+    <div class="about-wrap">
+
+      <p class="section-label">01 — About</p>
+      <h2 class="section-title">WHO I AM<span class="dot">.</span></h2>
+
+      <div class="about-grid">
+
+        <!-- Bio & Stats -->
+        <div>
+          <div class="about-bio">
+            <p>I'm a front-end focused web development student at Holy Angel University, based in Mabalacat City, Pampanga, Philippines. I focus on building clean, responsive, and user-centered web interfaces with attention to structure and performance.</p>
+            <p>I believe great software is the result of discipline, deliberate practice, and clear thinking. As I continue developing my skills, I strive to translate design concepts into accessible, pixel-accurate interfaces that work seamlessly across devices. I take pride in writing clean, maintainable code and continuously improving my craft.</p>
+          </div>
+          <div class="about-stats">
+            <div>
+              <div class="stat-num">2+</div>
+              <div class="stat-label">Years Exp</div>
+            </div>
+            <div>
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div>
+              <div class="stat-num">2+</div>
+              <div class="stat-label">Clients</div>
+            </div>
+          </div>
         </div>
-        <div class="about-stats">
-          <div>
-            <div class="stat-num">2+</div>
-            <div class="stat-label">Years Exp</div>
-          </div>
-          <div>
-            <div class="stat-num">10+</div>
-            <div class="stat-label">Projects</div>
-          </div>
-          <div>
-            <div class="stat-num">2+</div>
-            <div class="stat-label">Clients</div>
-          </div>
+
+        <!-- Skills Column 1 -->
+        <div class="skills-col">
+          <h4>Core</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>TypeScript</li>
+          </ul>
+          <h4>Tools</h4>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>Figma</li>
+            <li>Webpack / Vite</li>
+          </ul>
         </div>
-      </div>
 
-      <div class="skills-col">
-        <h4>Core</h4>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript (ES6+)</li>
-          <li>TypeScript</li>
-        </ul>
-        <h4>Tools</h4>
-        <ul>
-          <li>Git &amp; GitHub</li>
-          <li>Figma</li>
-          <li>Webpack / Vite</li>
-        </ul>
-      </div>
+        <!-- Skills Column 2 -->
+        <div class="skills-col">
+          <h4>Frameworks</h4>
+          <ul>
+            <li>React</li>
+            <li>Vue.js</li>
+            <li>Angular</li>
+            <li>Tailwind CSS</li>
+            <li>Bootstrap</li>
+          </ul>
+          <h4>Practices</h4>
+          <ul>
+            <li>Responsive Design</li>
+            <li>Web Accessibility</li>
+            <li>Performance Opt.</li>
+            <li>SEO</li>
+          </ul>
+        </div>
 
-      <div class="skills-col">
-        <h4>Frameworks</h4>
-        <ul>
-          <li>React</li>
-          <li>Vue.js</li>
-          <li>Angular</li>
-          <li>Tailwind CSS</li>
-          <li>Bootstrap</li>
-        </ul>
-        <h4>Practices</h4>
-        <ul>
-          <li>Responsive Design</li>
-          <li>Web Accessibility</li>
-          <li>Performance Opt.</li>
-          <li>SEO</li>
-        </ul>
       </div>
     </div>
   </div>
-</div>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

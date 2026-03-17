@@ -4,244 +4,267 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <title>Kenneth Nash Mallari — Front-End Developer</title>
+  <title>Projects — Kenneth Nash Mallari</title>
   <meta name="description" content="Kenneth Nash Mallari — Front-End Developer from Angeles City, Philippines. Available for internship, freelance, and part-time opportunities." />
   <meta name="author" content="Kenneth Nash Mallari" />
-  <link rel="canonical" href="https://portfolio-nash.netlify.app/" />
+  <link rel="canonical" href="https://portfolio-nash.netlify.app/projects.html" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="/images/logo.png" type="image/png" />
-  <link rel="apple-touch-icon" href="/images/logo.png" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
 
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    .projects-wrap { padding: 80px 48px; }
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
-    }
-    .project-card { background: var(--card-bg); overflow: hidden; }
-    .project-card-img-wrap { overflow: hidden; position: relative; }
-    .project-card-img {
-      width: 100%; aspect-ratio: 4/3;
-      object-fit: cover; filter: grayscale(60%);
-      display: block;
-      transition: filter .4s, transform .4s;
-    }
-    .project-card:hover .project-card-img {
-      filter: grayscale(0%); transform: scale(1.04);
-    }
-    .project-num {
-      position: absolute; top: 12px; left: 12px;
-      font-size: .65rem; letter-spacing: .15em;
-      background: var(--fg); color: var(--bg);
-      padding: 4px 8px;
-    }
-    .project-placeholder {
-      width: 100%; aspect-ratio: 4/3;
-      background: var(--bg2);
-      display: flex; align-items: center; justify-content: center;
-      color: var(--fg3); font-size: .75rem; letter-spacing: .15em;
-      text-transform: uppercase;
-    }
-    .project-link {
-      display: block;
-      text-decoration: none;
-      color: inherit;
-    }
-    .project-info { padding: 20px; }
-    .project-title {
-      font-size: .8rem; letter-spacing: .18em; text-transform: uppercase;
-      font-weight: 600; margin-bottom: 8px;
-      transition: color .2s;
-    }
-    .project-title:hover { color: var(--gold); }
-    .project-desc { font-size: .88rem; color: var(--fg2); margin-bottom: 14px; line-height: 1.5; }
-    .project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-    .tag {
-      font-size: .65rem; letter-spacing: .1em;
-      border: 1px solid var(--border);
-      padding: 3px 10px; color: var(--fg3);
-    }
-    @media (max-width: 900px) {
-      .projects-grid { grid-template-columns: repeat(2, 1fr); }
-      .projects-wrap { padding: 60px 20px; }
-    }
-    @media (max-width: 550px) {
-      .projects-grid { grid-template-columns: 1fr; }
-    }
-  </style>
 </head>
 <body>
-<nav>
-  <a href="index.html" class="nav-logo">
-    <img src="images/logo.png" alt="Logo" class="nav-logo-img"
-         onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
-    <span class="nav-logo-fallback" style="display:none;">KNM<span style="color:var(--gold)">.</span></span>
-  </a>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-    <button class="toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
-  </div>
-</nav>
 
-<div class="page">
-  <div class="projects-wrap">
-    <p class="section-label">02 — Projects</p>
-    <h2 class="section-title">SELECTED WORK<span class="dot">.</span></h2>
-    <div class="projects-grid">
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Kenneth Nash Mallari logo" class="nav-logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
+      <span class="nav-logo-fallback" style="display:none;">KNM<span class="dot">.</span></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <button class="toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 
-      <!-- PROJECT 1 -->
-      <div class="project-card">
-        <a href="https://your-live-link-1.com" target="_blank" class="project-link">
+  <div class="page">
+    <div class="projects-wrap">
+
+      <p class="section-label">02 — Projects</p>
+      <h2 class="section-title">SELECTED WORK<span class="dot">.</span></h2>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 01 — always visible -->
+        <div class="project-card">
           <div class="project-card-img-wrap">
-            <img src="images/project1.jpg" alt="HR Management System" class="project-card-img"
+            <img src="images/project1.jpg" alt="Cakeshop Website" class="project-card-img"
                  onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
             <span class="project-num">01</span>
           </div>
-        </a>
-        <div class="project-info">
-          <a href="https://your-live-link-1.com" target="_blank" class="project-link">
-            <div class="project-title">HR Management System</div>
-          </a>
-          <p class="project-desc">Internal dashboard for employee records, attendance, payroll, and performance analytics for a BPO company.</p>
-          <div class="project-tags">
-            <span class="tag">React</span>
-            <span class="tag">Chart.js</span>
-            <span class="tag">REST API</span>
-            <span class="tag">SCSS</span>
+          <div class="project-info">
+            <div class="project-title">Cakeshop Website</div>
+            <p class="project-desc">Modern small business website with homepage, menu section, about page, and contact. Mobile-first responsive design with custom animations and image galleries.</p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="project-btn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+                Live View
+              </a>
+              <a href="https://github.com/Nash-M1" target="_blank" rel="noopener" class="project-btn project-btn--ghost">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- PROJECT 2 -->
-      <div class="project-card">
-        <a href="https://your-live-link-2.com" target="_blank" class="project-link">
+        <!-- Project 02 — always visible -->
+        <div class="project-card">
           <div class="project-card-img-wrap">
-            <img src="images/project2.jpg" alt="E-Commerce Platform" class="project-card-img"
+            <img src="images/project2.jpg" alt="Barbershop Booking System" class="project-card-img"
                  onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
             <span class="project-num">02</span>
           </div>
-        </a>
-        <div class="project-info">
-          <a href="https://your-live-link-2.com" target="_blank" class="project-link">
-            <div class="project-title">E-Commerce Platform</div>
-          </a>
-          <p class="project-desc">Full-featured online store with cart, checkout, payment gateway integration, and admin inventory panel.</p>
-          <div class="project-tags">
-            <span class="tag">Next.js</span>
-            <span class="tag">Stripe</span>
-            <span class="tag">Firebase</span>
-            <span class="tag">Tailwind</span>
+          <div class="project-info">
+            <div class="project-title">Barbershop Booking System</div>
+            <p class="project-desc">Web-based booking system with online scheduling, admin panel for managing services and time slots, and database-driven architecture for customer and appointment management.</p>
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="project-btn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+                Live View
+              </a>
+              <a href="https://github.com/Nash-M1" target="_blank" rel="noopener" class="project-btn project-btn--ghost">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- PROJECT 3 -->
-      <div class="project-card">
-        <a href="https://your-live-link-3.com" target="_blank" class="project-link">
+        <!-- Project 03 — always visible (placeholder for next real project) -->
+        <div class="project-card">
           <div class="project-card-img-wrap">
-            <img src="images/project3.jpg" alt="Real Estate Portal" class="project-card-img"
+            <img src="images/project3.jpg" alt="Portfolio Website" class="project-card-img"
                  onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
             <span class="project-num">03</span>
           </div>
-        </a>
-        <div class="project-info">
-          <a href="https://your-live-link-3.com" target="_blank" class="project-link">
-            <div class="project-title">Real Estate Portal</div>
-          </a>
-          <p class="project-desc">Property listings platform with map integration and advanced search filters for the Philippine market.</p>
-          <div class="project-tags">
-            <span class="tag">Vue.js</span>
-            <span class="tag">Mapbox</span>
-            <span class="tag">Laravel API</span>
-            <span class="tag">MySQL</span>
+          <div class="project-info">
+            <div class="project-title">Personal Portfolio</div>
+            <p class="project-desc">This portfolio — a multi-page personal site built with pure HTML, CSS, and JavaScript. Features dark/light mode, responsive layout, and a clean editorial design system.</p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="https://portfolio-knm.com" target="_blank" rel="noopener" class="project-btn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+                Live View
+              </a>
+              <a href="https://github.com/Nash-M1/my-portfolio" target="_blank" rel="noopener" class="project-btn project-btn--ghost">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- PROJECT 4 -->
-      <div class="project-card">
-        <a href="https://your-live-link-4.com" target="_blank" class="project-link">
+        <!-- Project 04 — hidden by default -->
+        <div class="project-card project-card--hidden">
           <div class="project-card-img-wrap">
-            <img src="images/project4.jpg" alt="LGU Public Portal" class="project-card-img"
+            <img src="images/project4.jpg" alt="Restaurant Landing Page" class="project-card-img"
                  onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
             <span class="project-num">04</span>
           </div>
-        </a>
-        <div class="project-info">
-          <a href="https://your-live-link-4.com" target="_blank" class="project-link">
-            <div class="project-title">LGU Public Portal</div>
-          </a>
-          <p class="project-desc">Accessible government services portal compliant with WCAG 2.1 for a local government unit in Luzon.</p>
-          <div class="project-tags">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">Vanilla JS</span>
+          <div class="project-info">
+            <div class="project-title">Restaurant Landing Page</div>
+            <p class="project-desc">Responsive landing page for a local restaurant featuring menu showcase, gallery, reservation section, and location map integration.</p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="project-btn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+                Live View
+              </a>
+              <a href="https://github.com/Nash-M1" target="_blank" rel="noopener" class="project-btn project-btn--ghost">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- PROJECT 5 -->
-      <div class="project-card">
-        <a href="https://your-live-link-5.com" target="_blank" class="project-link">
+        <!-- Project 05 — hidden by default -->
+        <div class="project-card project-card--hidden">
           <div class="project-card-img-wrap">
-            <img src="images/project5.jpg" alt="Learning Management System" class="project-card-img"
+            <img src="images/project5.jpg" alt="Student Portal UI" class="project-card-img"
                  onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
             <span class="project-num">05</span>
           </div>
-        </a>
-        <div class="project-info">
-          <a href="https://your-live-link-5.com" target="_blank" class="project-link">
-            <div class="project-title">Learning Management System</div>
-          </a>
-          <p class="project-desc">Online education platform with video lessons, quizzes, progress tracking, and certificate generation.</p>
-          <div class="project-tags">
-            <span class="tag">React</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">MongoDB</span>
+          <div class="project-info">
+            <div class="project-title">Student Portal UI</div>
+            <p class="project-desc">Clean and accessible student portal interface with dashboard, schedule viewer, grade tracker, and notification system built for Holy Angel University.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="project-btn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+                Live View
+              </a>
+              <a href="https://github.com/Nash-M1" target="_blank" rel="noopener" class="project-btn project-btn--ghost">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- PROJECT 6 -->
-      <div class="project-card">
-        <a href="https://your-live-link-6.com" target="_blank" class="project-link">
+         <!-- Project 06 — hidden by default -->
+        <div class="project-card project-card--hidden">
           <div class="project-card-img-wrap">
-            <img src="images/project6.jpg" alt="Corporate Website Redesign" class="project-card-img"
+            <img src="images/project6.jpg" alt="Student Portal UI" class="project-card-img"
                  onerror="this.outerHTML='<div class=\'project-placeholder\'>Project Image</div>'" />
             <span class="project-num">06</span>
           </div>
-        </a>
-        <div class="project-info">
-          <a href="https://your-live-link-6.com" target="_blank" class="project-link">
-            <div class="project-title">Corporate Website Redesign</div>
-          </a>
-          <p class="project-desc">Full redesign of a financial services company site with improved UX, animations, and CMS integration.</p>
-          <div class="project-tags">
-            <span class="tag">Next.js</span>
-            <span class="tag">Sanity CMS</span>
-            <span class="tag">Framer Motion</span>
+          <div class="project-info">
+            <div class="project-title">Student Portal UI</div>
+            <p class="project-desc">Clean and accessible student portal interface with dashboard, schedule viewer, grade tracker, and notification system built for Holy Angel University.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="project-btn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+                Live View
+              </a>
+              <a href="https://github.com/Nash-M1" target="_blank" rel="noopener" class="project-btn project-btn--ghost">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
+
+
+      </div>
+
+      <!-- View More button -->
+      <div class="projects-more">
+        <button class="projects-more-btn" id="viewMoreBtn">
+          View More Projects
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+      </div>
+
+      <!-- GitHub CTA below -->
+      <div class="projects-footer">
+        <a href="https://github.com/Nash-M1" target="_blank" rel="noopener" class="projects-github-cta">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          View all my projects on GitHub
+          <span class="projects-github-arrow">→</span>
+        </a>
       </div>
 
     </div>
   </div>
-</div>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      const btn    = document.getElementById('viewMoreBtn');
+      const hidden = document.querySelectorAll('.project-card--hidden');
+      let expanded = false;
+
+      if (btn) {
+        btn.addEventListener('click', function () {
+          expanded = !expanded;
+          hidden.forEach(function (card) {
+            card.classList.toggle('project-card--visible', expanded);
+          });
+          btn.classList.toggle('is-open', expanded);
+          btn.innerHTML = expanded
+            ? 'Show Less <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>'
+            : 'View More Projects <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

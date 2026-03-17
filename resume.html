@@ -4,141 +4,142 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <title>Kenneth Nash Mallari — Front-End Developer</title>
+  <title>Resume — Kenneth Nash Mallari</title>
   <meta name="description" content="Kenneth Nash Mallari — Front-End Developer from Angeles City, Philippines. Available for internship, freelance, and part-time opportunities." />
   <meta name="author" content="Kenneth Nash Mallari" />
-  <link rel="canonical" href="https://portfolio-nash.netlify.app/" />
+  <link rel="canonical" href="https://portfolio-nash.netlify.app/resume.html" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="/images/logo.png" type="image/png" />
-  <link rel="apple-touch-icon" href="/images/logo.png" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
 
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    .resume-wrap { padding: 80px 48px; }
-    .resume-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
-    .resume-col h4 {
-      font-size: .7rem; letter-spacing: .22em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 32px;
-    }
-    .resume-item { padding: 24px 0; border-bottom: 1px solid var(--border); }
-    .resume-item:first-of-type { padding-top: 0; }
-    .resume-date {
-      font-size: .7rem; letter-spacing: .18em;
-      color: var(--gold); margin-bottom: 6px;
-    }
-    .resume-role {
-      font-size: .85rem; letter-spacing: .12em; text-transform: uppercase;
-      font-weight: 700; margin-bottom: 4px;
-    }
-    .resume-company { font-size: .9rem; color: var(--fg3); }
-    .resume-download {
-      margin-top: 60px;
-      border: 1px solid var(--border);
-      padding: 32px 40px;
-      display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 20px;
-    }
-    .resume-download h5 {
-      font-size: .8rem; letter-spacing: .18em; text-transform: uppercase;
-      margin-bottom: 6px;
-    }
-    .resume-download p { font-size: .88rem; color: var(--fg3); }
-    @media (max-width: 800px) {
-      .resume-grid { grid-template-columns: 1fr; gap: 40px; }
-      .resume-wrap { padding: 60px 20px; }
-      .resume-download { padding: 24px 20px; }
-    }
-  </style>
 </head>
 <body>
-<nav>
-  <a href="index.html" class="nav-logo">
-    <img src="images/logo.png" alt="Logo" class="nav-logo-img"
-         onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
-    <span class="nav-logo-fallback" style="display:none;">JDC<span style="color:var(--gold)">.</span></span>
-  </a>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-    <button class="toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Kenneth Nash Mallari logo" class="nav-logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
+      <span class="nav-logo-fallback" style="display:none;">KNM<span class="dot">.</span></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <button class="toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="page">
+    <div class="resume-wrap">
+
+      <p class="section-label">03 — Resume</p>
+      <h2 class="section-title">MY JOURNEY<span class="dot">.</span></h2>
+
+      <div class="resume-grid">
+
+        <!-- LEFT COL: Education + Certifications -->
+        <div class="resume-col">
+
+          <h4>Education</h4>
+
+          <div class="resume-item">
+            <div class="resume-date">2023 — Expected 2027</div>
+            <div class="resume-role">BS Information Technology</div>
+            <div class="resume-company">Holy Angel University, Angeles City · Major in Web Development</div>
+          </div>
+
+          <h4>Certifications</h4>
+
+          <div class="resume-item">
+            <div class="resume-date">2025 — FreeCodeCamp</div>
+            <div class="resume-role">Back End Development and APIs V8</div>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-date">2025 — FreeCodeCamp</div>
+            <div class="resume-role">Legacy JavaScript Algorithms &amp; Data Structures V7</div>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-date">2025 — FreeCodeCamp</div>
+            <div class="resume-role">Legacy Responsive Web Design V8</div>
+          </div>
+
+          <h4>Personal Projects</h4>
+
+          <div class="resume-item">
+            <div class="resume-date">2024</div>
+            <div class="resume-role">Cakeshop Website</div>
+            <div class="resume-company">Modern small business site with homepage, menu section, about page, and contact. Mobile-first responsive design with custom animations and image galleries.</div>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-date">2024</div>
+            <div class="resume-role">Barbershop Booking System</div>
+            <div class="resume-company">Web-based booking system with online scheduling, admin panel for managing services and time slots, and database-driven architecture for customer and appointment management.</div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COL: Skills -->
+        <div class="resume-col">
+
+          <h4>Frontend</h4>
+
+          <div class="resume-item">
+            <div class="resume-date">Core</div>
+            <div class="resume-role">HTML5 · CSS3 · JavaScript ES6+</div>
+            <div class="resume-company">Semantic markup, modern CSS, vanilla JS</div>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-date">Frameworks &amp; Libraries</div>
+            <div class="resume-role">React.js · Tailwind CSS · Bootstrap</div>
+            <div class="resume-company">Component-based UI, utility-first styling, responsive grids</div>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-date">Design</div>
+            <div class="resume-role">Responsive Design · UI/UX · Figma</div>
+            <div class="resume-company">Mobile-first layouts, wireframing, prototyping</div>
+          </div>
+
+          <h4>Tools</h4>
+
+          <div class="resume-item">
+            <div class="resume-date">Dev Tools</div>
+            <div class="resume-role">Git · GitHub · VS Code · Figma</div>
+            <div class="resume-company">Version control, code editing, UI design</div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Download CTA -->
+      <div class="resume-download">
+        <div>
+          <h5>Open For Opportunities</h5>
+          <p>Internship, freelance, or part-time — eager to learn and contribute.</p>
+        </div>
+        <a href="assets/resume.pdf" class="btn-primary" download>+ Download PDF</a>
+      </div>
+
+    </div>
   </div>
-</nav>
 
-<div class="page">
-  <div class="resume-wrap">
-    <p class="section-label">03 — Resume</p>
-    <h2 class="section-title">MY JOURNEY<span class="dot">.</span></h2>
-
-    <div class="resume-grid">
-
-      <div class="resume-col">
-        <h4>Education</h4>
-        <div class="resume-item">
-          <div class="resume-date">2023 — Expected 2027</div>
-          <div class="resume-role">BS Information Technology</div>
-          <div class="resume-company">Holy Angel University, Angeles City</div>
-        </div>
-        <div class="resume-item">
-          <div class="resume-date">3rd Year</div>
-          <div class="resume-role">Major in Web Development</div>
-          <div class="resume-company">Building real-world projects &amp; systems</div>
-        </div>
-        <h4 style="margin-top:40px;">Certifications</h4>
-        <div class="resume-item">
-          <div class="resume-date">2025 — FreeCodeCamp</div>
-          <div class="resume-role">Back End Development and APIs V8</div>
-        </div>
-        <div class="resume-item">
-          <div class="resume-date">2025 — FreeCodeCamp</div>
-          <div class="resume-role">Legacy JavaScript Algorithms &amp; Data Structures V7</div>
-        </div>
-        <div class="resume-item">
-          <div class="resume-date">2025 — FreeCodeCamp</div>
-          <div class="resume-role">Legacy Responsive Web Design V8</div>
-        </div>
-      </div>
-
-      
-      <div class="resume-col">
-        <h4>Technical Skills</h4>
-        <div class="resume-item">
-          <div class="resume-date">Frontend</div>
-          <div class="resume-role">HTML5, CSS3, JavaScript ES6+</div>
-          <div class="resume-company">React.js· Vue · Angular · Tailwind CSS · Bootstrap · Responsive Design</div>
-        </div>
-
-        <div class="resume-item">
-          <div class="resume-date">Tools</div>
-          <div class="resume-role">Git · GitHub · VS Code · Figma</div>
-          <div class="resume-company">Version control · UI/UX design · deployment</div>
-        </div>
-      </div>
-
-    </div>
-
-    </div>
-
-    <div class="resume-download">
-      <div>
-        <h5>Open For Opportunities</h5>
-        <p>Internship, freelance, or part-time — eager to learn and contribute.</p>
-      </div>
-      <a href="assets/resume.pdf" class="btn-primary" download>+ Download PDF</a>
-    </div>
-  </div>
-</div>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
