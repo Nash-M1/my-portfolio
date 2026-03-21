@@ -546,8 +546,9 @@ nav {
 
 .project-card-img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;        
   object-fit: cover;
+  object-position: top center;
   filter: grayscale(60%);
   transition: filter 0.4s ease, transform 0.4s ease;
 }
@@ -570,7 +571,7 @@ nav {
 
 .project-placeholder {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   background: var(--bg2);
   display: flex;
   align-items: center;
@@ -592,6 +593,8 @@ nav {
 }
 
 .project-title {
+  display: block;       
+  text-decoration: none; 
   font-size: 0.8rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
