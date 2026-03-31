@@ -32,7 +32,6 @@
       const isOpen = navLinks.classList.toggle('is-open');
       hamburger.classList.toggle('is-open', isOpen);
       hamburger.setAttribute('aria-expanded', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
     navLinks.querySelectorAll('a').forEach(function (link) {
@@ -40,7 +39,6 @@
         navLinks.classList.remove('is-open');
         hamburger.classList.remove('is-open');
         hamburger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
       });
     });
 
@@ -49,7 +47,6 @@
         navLinks.classList.remove('is-open');
         hamburger.classList.remove('is-open');
         hamburger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
         hamburger.focus();
       }
     });
