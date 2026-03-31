@@ -277,6 +277,8 @@
 
   revealSelectors.forEach(function (sel) {
     document.querySelectorAll(sel).forEach(function (el, i) {
+      // Never touch elements inside nav or footer nav
+      if (el.closest('nav') || el.closest('#navLinks')) return;
       el.classList.add('reveal');
       if (i % 3 === 1) el.classList.add('reveal-delay-1');
       if (i % 3 === 2) el.classList.add('reveal-delay-2');
